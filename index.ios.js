@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  Platform,
   StyleSheet,
   Text,
   View
@@ -22,6 +23,8 @@ import {
   VictoryScatter,
   VictoryZoomContainer,
 } from 'victory-native';
+
+var graphWidth = Platform.isTVOS ? 1000 : 400;
 
 class VictoryTest extends React.Component {
 
@@ -42,10 +45,10 @@ class VictoryTest extends React.Component {
     const chartStyle = { parent: {minWidth: "100%", marginLeft: "10%"}};
     return (
       <View style={styles.container}>
-          <VictoryChart width={1000} height={400} scale={{x: "time"}} style={chartStyle}
+          <VictoryChart width={graphWidth} height={400} scale={{x: "time"}} style={chartStyle}
             containerComponent={
               <VictoryZoomContainer responsive={false}
-                dimension="x"
+                dimension="y"
                 zoomDomain={this.state.zoomDomain}
                 onDomainChange={this.handleZoom.bind(this)}
               />
@@ -71,7 +74,7 @@ class VictoryTest extends React.Component {
 
           <VictoryChart
             padding={{top: 0, left: 50, right: 50, bottom: 30}}
-            width={1000} height={100} scale={{x: "time"}} style={chartStyle}
+            width={graphWidth} height={100} scale={{x: "time"}} style={chartStyle}
             containerComponent={
               <VictoryBrushContainer responsive={false}
                 dimension="x"
