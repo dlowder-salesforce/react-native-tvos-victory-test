@@ -24,7 +24,9 @@ import {
   VictoryZoomContainer,
 } from 'victory-native';
 
-var graphWidth = Platform.isTVOS ? 1000 : 400;
+var graphWidth = Platform.isTVOS ? 1700 : 400;
+var mainGraphHeight = Platform.isTVOS ? 700: 400;
+var smallGraphHeight = Platform.isTVOS ? 200: 100;
 
 class VictoryTest extends React.Component {
 
@@ -45,7 +47,7 @@ class VictoryTest extends React.Component {
     const chartStyle = { parent: {minWidth: "100%", marginLeft: "10%"}};
     return (
       <View style={styles.container}>
-          <VictoryChart width={graphWidth} height={400} scale={{x: "time"}} style={chartStyle}
+          <VictoryChart width={graphWidth} height={mainGraphHeight} scale={{x: "time"}} style={chartStyle}
             containerComponent={
               <VictoryZoomContainer responsive={false}
                 dimension="y"
@@ -56,7 +58,7 @@ class VictoryTest extends React.Component {
           >
             <VictoryLine
               style={{
-                data: {stroke: "tomato"}
+                data: {stroke: "tomato"},
               }}
               data={[
                 {x: new Date(1982, 1, 1), y: 125},
@@ -74,7 +76,7 @@ class VictoryTest extends React.Component {
 
           <VictoryChart
             padding={{top: 0, left: 50, right: 50, bottom: 30}}
-            width={graphWidth} height={100} scale={{x: "time"}} style={chartStyle}
+            width={graphWidth} height={smallGraphHeight} scale={{x: "time"}} style={chartStyle}
             containerComponent={
               <VictoryBrushContainer responsive={false}
                 dimension="x"
@@ -96,7 +98,7 @@ class VictoryTest extends React.Component {
             />
             <VictoryLine
               style={{
-                data: {stroke: "tomato"}
+                data: {stroke: "tomato"},
               }}
               data={[
                 {x: new Date(1982, 1, 1), y: 125},
