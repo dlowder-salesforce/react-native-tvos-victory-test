@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D9D54BBD056BD40D45B22C9 /* libPods-VictoryTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3DC5D72D29B21FF88336D0 /* libPods-VictoryTest.a */; };
+		2D0BA4D91F33CE1C00BC13BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BA4D81F33CE1C00BC13BB /* main.m */; };
+		2D0BA4DC1F33CE1C00BC13BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BA4DB1F33CE1C00BC13BB /* AppDelegate.m */; };
+		2D0BA4DF1F33CE1C00BC13BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BA4DE1F33CE1C00BC13BB /* ViewController.m */; };
+		2D0BA4E21F33CE1C00BC13BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BA4E01F33CE1C00BC13BB /* Main.storyboard */; };
+		2D0BA4E41F33CE1C00BC13BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BA4E31F33CE1C00BC13BB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0358F513F57D5F5AF98C5698 /* Pods-VictoryTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoryTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-VictoryTest/Pods-VictoryTest.release.xcconfig"; sourceTree = "<group>"; };
+		2D0BA4D41F33CE1C00BC13BB /* VictoryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VictoryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0BA4D81F33CE1C00BC13BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D0BA4DA1F33CE1C00BC13BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D0BA4DB1F33CE1C00BC13BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D0BA4DD1F33CE1C00BC13BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2D0BA4DE1F33CE1C00BC13BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D0BA4E11F33CE1C00BC13BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D0BA4E31F33CE1C00BC13BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D0BA4E51F33CE1C00BC13BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3DC5D72D29B21FF88336D0 /* libPods-VictoryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VictoryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F030897C0BBE63380EFC15 /* Pods-VictoryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoryTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VictoryTest/Pods-VictoryTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D0BA4D11F33CE1C00BC13BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9D54BBD056BD40D45B22C9 /* libPods-VictoryTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		284F2A83F738040D8160AE86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA3DC5D72D29B21FF88336D0 /* libPods-VictoryTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D0BA4CB1F33CE1C00BC13BB = {
+			isa = PBXGroup;
+			children = (
+				2D0BA4D61F33CE1C00BC13BB /* VictoryTest */,
+				2D0BA4D51F33CE1C00BC13BB /* Products */,
+				F68F2355D90A0AD3A17B07E6 /* Pods */,
+				284F2A83F738040D8160AE86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D0BA4D51F33CE1C00BC13BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D0BA4D41F33CE1C00BC13BB /* VictoryTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D0BA4D61F33CE1C00BC13BB /* VictoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				2D0BA4DA1F33CE1C00BC13BB /* AppDelegate.h */,
+				2D0BA4DB1F33CE1C00BC13BB /* AppDelegate.m */,
+				2D0BA4DD1F33CE1C00BC13BB /* ViewController.h */,
+				2D0BA4DE1F33CE1C00BC13BB /* ViewController.m */,
+				2D0BA4E01F33CE1C00BC13BB /* Main.storyboard */,
+				2D0BA4E31F33CE1C00BC13BB /* Assets.xcassets */,
+				2D0BA4E51F33CE1C00BC13BB /* Info.plist */,
+				2D0BA4D71F33CE1C00BC13BB /* Supporting Files */,
+			);
+			path = VictoryTest;
+			sourceTree = "<group>";
+		};
+		2D0BA4D71F33CE1C00BC13BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D0BA4D81F33CE1C00BC13BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F68F2355D90A0AD3A17B07E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4F030897C0BBE63380EFC15 /* Pods-VictoryTest.debug.xcconfig */,
+				0358F513F57D5F5AF98C5698 /* Pods-VictoryTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D0BA4D31F33CE1C00BC13BB /* VictoryTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D0BA4E81F33CE1C00BC13BB /* Build configuration list for PBXNativeTarget "VictoryTest" */;
+			buildPhases = (
+				DD2E9647F2EB791CF76440E5 /* [CP] Check Pods Manifest.lock */,
+				2D0BA4D01F33CE1C00BC13BB /* Sources */,
+				2D0BA4D11F33CE1C00BC13BB /* Frameworks */,
+				2D0BA4D21F33CE1C00BC13BB /* Resources */,
+				D67DBF874D60B92929870F16 /* [CP] Embed Pods Frameworks */,
+				1CDA93D6F98F1B2F25B41064 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VictoryTest;
+			productName = VictoryTest;
+			productReference = 2D0BA4D41F33CE1C00BC13BB /* VictoryTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D0BA4CC1F33CE1C00BC13BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Douglas Lowder";
+				TargetAttributes = {
+					2D0BA4D31F33CE1C00BC13BB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D0BA4CF1F33CE1C00BC13BB /* Build configuration list for PBXProject "VictoryTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D0BA4CB1F33CE1C00BC13BB;
+			productRefGroup = 2D0BA4D51F33CE1C00BC13BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D0BA4D31F33CE1C00BC13BB /* VictoryTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D0BA4D21F33CE1C00BC13BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0BA4E41F33CE1C00BC13BB /* Assets.xcassets in Resources */,
+				2D0BA4E21F33CE1C00BC13BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CDA93D6F98F1B2F25B41064 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VictoryTest/Pods-VictoryTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D67DBF874D60B92929870F16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VictoryTest/Pods-VictoryTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2E9647F2EB791CF76440E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D0BA4D01F33CE1C00BC13BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0BA4DF1F33CE1C00BC13BB /* ViewController.m in Sources */,
+				2D0BA4DC1F33CE1C00BC13BB /* AppDelegate.m in Sources */,
+				2D0BA4D91F33CE1C00BC13BB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D0BA4E01F33CE1C00BC13BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D0BA4E11F33CE1C00BC13BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D0BA4E61F33CE1C00BC13BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		2D0BA4E71F33CE1C00BC13BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D0BA4E91F33CE1C00BC13BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F030897C0BBE63380EFC15 /* Pods-VictoryTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = VictoryTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglowder.VictoryTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D0BA4EA1F33CE1C00BC13BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0358F513F57D5F5AF98C5698 /* Pods-VictoryTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = VictoryTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglowder.VictoryTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D0BA4CF1F33CE1C00BC13BB /* Build configuration list for PBXProject "VictoryTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0BA4E61F33CE1C00BC13BB /* Debug */,
+				2D0BA4E71F33CE1C00BC13BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D0BA4E81F33CE1C00BC13BB /* Build configuration list for PBXNativeTarget "VictoryTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0BA4E91F33CE1C00BC13BB /* Debug */,
+				2D0BA4EA1F33CE1C00BC13BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D0BA4CC1F33CE1C00BC13BB /* Project object */;
+}
