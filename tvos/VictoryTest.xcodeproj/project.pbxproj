@@ -113,6 +113,7 @@
 				2D0BA4D21F33CE1C00BC13BB /* Resources */,
 				D67DBF874D60B92929870F16 /* [CP] Embed Pods Frameworks */,
 				1CDA93D6F98F1B2F25B41064 /* [CP] Copy Pods Resources */,
+				2D7262EC1F33FC8B00DF9E66 /* Start Packager */,
 			);
 			buildRules = (
 			);
@@ -183,6 +184,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VictoryTest/Pods-VictoryTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2D7262EC1F33FC8B00DF9E66 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\nif nc -w 5 -z localhost 8081 ; then\nif ! curl -s \"http://localhost:8081/status\" | grep -q \"packager-status:running\" ; then\necho \"Port 8081 already in use, packager is either not running or not running correctly\"\nexit 2\nfi\nelse\nopen \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\nfi\nfi";
 		};
 		D67DBF874D60B92929870F16 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
