@@ -20,12 +20,10 @@ import {
   VictoryLine,
   VictoryPie,
   VictoryScatter,
-} from 'victory-native';
-
-import {
   VictoryBrushContainer,
   VictoryZoomContainer,
-} from './AppleTVBrushZoomContainer';
+} from 'victory-native';
+
 
 var graphWidth = Platform.isTVOS ? 1700 : 400;
 var mainGraphHeight = Platform.isTVOS ? 700: 400;
