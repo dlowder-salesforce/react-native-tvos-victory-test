@@ -16,13 +16,16 @@ import {
 import {
   VictoryAxis,
   VictoryBar,
-  VictoryBrushContainer,
   VictoryChart,
   VictoryLine,
   VictoryPie,
   VictoryScatter,
-  VictoryZoomContainer,
 } from 'victory-native';
+
+import {
+  VictoryBrushContainer,
+  VictoryZoomContainer,
+} from './AppleTVBrushZoomContainer';
 
 var graphWidth = Platform.isTVOS ? 1700 : 400;
 var mainGraphHeight = Platform.isTVOS ? 700: 400;
@@ -50,7 +53,7 @@ class VictoryTest extends React.Component {
           <VictoryChart width={graphWidth} height={mainGraphHeight} scale={{x: "time"}} style={chartStyle}
             containerComponent={
               <VictoryZoomContainer responsive={false}
-                dimension="y"
+                dimension="x"
                 zoomDomain={this.state.zoomDomain}
                 onDomainChange={this.handleZoom.bind(this)}
               />
