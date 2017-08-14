@@ -12,7 +12,7 @@
 		"react": "16.0.0-alpha.12",
 		"react-native": "https://github.com/dlowder-salesforce/react-native#tvos-events-2",
 		"react-native-svg": "https://github.com/dlowder-salesforce/react-native-svg#master",
-		"victory-native": "https://github.com/dlowder-salesforce/victory-native#master"
+		"victory-native": "https://github.com/dlowder-salesforce/victory-native#tvos-events"
 	},
 	"devDependencies": {
 		"babel-jest": "20.0.3",
