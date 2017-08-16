@@ -9,6 +9,7 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"range": "^0.0.3",
 		"react": "16.0.0-alpha.12",
 		"react-native": "https://github.com/dlowder-salesforce/react-native#tvos-events-2",
 		"react-native-svg": "https://github.com/dlowder-salesforce/react-native-svg#master",
