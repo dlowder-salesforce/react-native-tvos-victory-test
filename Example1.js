@@ -29,7 +29,8 @@ import {
 } from 'range';
 
 var graphWidth = Platform.isTVOS ? 1700 : 400;
-var mainGraphHeight = Platform.isTVOS ? 900: 400;
+var mainGraphHeight = Platform.isTVOS ? 900: 700;
+var spotSize = Platform.isTVOS ? 30 : 6;
 
 var random = function(min, max) {
   min = Math.ceil(min);
@@ -52,7 +53,7 @@ class Example1 extends React.Component {
       return {
         x: random(1, 50),
         y: random(10, 90),
-        size: 30
+        size: spotSize 
       };
     });
   }
