@@ -13,6 +13,7 @@
 		2D0BA4DF1F33CE1C00BC13BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BA4DE1F33CE1C00BC13BB /* ViewController.m */; };
 		2D0BA4E21F33CE1C00BC13BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BA4E01F33CE1C00BC13BB /* Main.storyboard */; };
 		2D0BA4E41F33CE1C00BC13BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BA4E31F33CE1C00BC13BB /* Assets.xcassets */; };
+		2D8E66F91F455F0F005F7EFC /* index.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D8E66F81F455F0F005F7EFC /* index.bundle.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2D0BA4E11F33CE1C00BC13BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0BA4E31F33CE1C00BC13BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0BA4E51F33CE1C00BC13BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D8E66F81F455F0F005F7EFC /* index.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = index.bundle.js; path = ../../index.bundle.js; sourceTree = "<group>"; };
 		CA3DC5D72D29B21FF88336D0 /* libPods-VictoryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VictoryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F030897C0BBE63380EFC15 /* Pods-VictoryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoryTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VictoryTest/Pods-VictoryTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 		2D0BA4D61F33CE1C00BC13BB /* VictoryTest */ = {
 			isa = PBXGroup;
 			children = (
+				2D8E66F81F455F0F005F7EFC /* index.bundle.js */,
 				2D0BA4DA1F33CE1C00BC13BB /* AppDelegate.h */,
 				2D0BA4DB1F33CE1C00BC13BB /* AppDelegate.m */,
 				2D0BA4DD1F33CE1C00BC13BB /* ViewController.h */,
@@ -107,13 +110,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D0BA4E81F33CE1C00BC13BB /* Build configuration list for PBXNativeTarget "VictoryTest" */;
 			buildPhases = (
+				2D7262EC1F33FC8B00DF9E66 /* Start Packager */,
 				DD2E9647F2EB791CF76440E5 /* [CP] Check Pods Manifest.lock */,
 				2D0BA4D01F33CE1C00BC13BB /* Sources */,
 				2D0BA4D11F33CE1C00BC13BB /* Frameworks */,
 				2D0BA4D21F33CE1C00BC13BB /* Resources */,
 				D67DBF874D60B92929870F16 /* [CP] Embed Pods Frameworks */,
 				1CDA93D6F98F1B2F25B41064 /* [CP] Copy Pods Resources */,
-				2D7262EC1F33FC8B00DF9E66 /* Start Packager */,
+				2D8E66F71F455E40005F7EFC /* Generate Bundle */,
 			);
 			buildRules = (
 			);
@@ -162,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8E66F91F455F0F005F7EFC /* index.bundle.js in Resources */,
 				2D0BA4E41F33CE1C00BC13BB /* Assets.xcassets in Resources */,
 				2D0BA4E21F33CE1C00BC13BB /* Main.storyboard in Resources */,
 			);
@@ -199,6 +204,20 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\nif nc -w 5 -z localhost 8081 ; then\nif ! curl -s \"http://localhost:8081/status\" | grep -q \"packager-status:running\" ; then\necho \"Port 8081 already in use, packager is either not running or not running correctly\"\nexit 2\nfi\nelse\nopen \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\nfi\nfi";
 		};
+		2D8E66F71F455E40005F7EFC /* Generate Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../generate-bundle.sh";
+		};
 		D67DBF874D60B92929870F16 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,7 +248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
